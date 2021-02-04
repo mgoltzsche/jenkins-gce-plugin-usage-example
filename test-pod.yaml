@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cached-build
+spec:
+  restartPolicy: Never
+  containers:
+  - name: container
+    image: alpine:3.12
+    command: ["/bin/sh", "-c", "echo hello world"]
